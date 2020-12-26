@@ -1,7 +1,7 @@
 import { query } from "./base";
 import { User } from "./types";
 
-const findUser = async (username: string): Promise<User | null> =>
+const findUser = async (username: string): Promise<User> =>
   query(
     `query User($username: String!) {
        user(username: $username) {
@@ -17,7 +17,7 @@ const findUser = async (username: string): Promise<User | null> =>
        }
      }`,
     { username }
-  ).then(({ user }) => ({
+  ).then(({ data: { user } }) => ({
     id: user._id,
     username: user.username,
     name: user.name,

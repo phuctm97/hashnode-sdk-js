@@ -11,3 +11,12 @@ export type User = {
   tagline: string;
   publication: Publication;
 };
+
+export type Article = {
+  id: string;
+  title: string;
+  slug: string;
+  url: string;
+  canonicalURL?: string;
+  contentMarkdown: string;
+}
