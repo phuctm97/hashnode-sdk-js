@@ -1,14 +1,11 @@
+import run from "./_run";
 import createPublicationArticle from "../create-publication-article";
 
-createPublicationArticle("5fa565080163314ab6d7deab", {
-  title: "This is a test article",
-  slug: "this-is-a-test-article",
-  contentMarkdown: "# This is a test article",
-})
-  .then((data) => {
-    console.log(data);
+run(
+  createPublicationArticle("5fa565080163314ab6d7deab", {
+    title: "Article created using hashnode-sdk-js",
+    slug: "article-created-using-hashnode-sdk-js",
+    contentMarkdown:
+      "# [Test] Hashnode SDK JavaScript/TypeScript\n\nThis is a test article, created using hashnode-sdk-js.",
   })
-  .catch((err) => {
-    console.error(err);
-    process.exit(1);
-  });
+);
