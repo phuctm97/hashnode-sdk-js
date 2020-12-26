@@ -1,6 +1,11 @@
 import { query } from "./base";
 import { User } from "./types";
 
+/**
+ * Find a user by username.
+ *
+ * @param username The user's username.
+ */
 const findUser = async (username: string): Promise<User> =>
   query(
     `query User($username: String!) {

@@ -19,4 +19,4 @@ export type Article = {
   url: string;
   canonicalURL?: string;
   contentMarkdown: string;
-}
+};

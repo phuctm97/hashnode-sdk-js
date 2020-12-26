@@ -3,6 +3,12 @@ import { Article } from "./types";
 
 type InputArticle = Omit<Article, "url">;
 
+/**
+ * Update an article in a publication.
+ *
+ * @param publicationId The publication's id.
+ * @param article The article with updated content.
+ */
 const updatePublicationArticle = async (
   publicationId: string,
   article: InputArticle

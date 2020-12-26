@@ -3,6 +3,12 @@ import { Article } from "./types";
 
 type InputArticle = Omit<Article, "id" | "url">;
 
+/**
+ * Create an article in a publication.
+ *
+ * @param publicationId The publication's id.
+ * @param article The article to be created.
+ */
 const createPublicationArticle = (
   publicationId: string,
   article: InputArticle

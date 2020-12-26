@@ -3,6 +3,9 @@ import fetch from "node-fetch";
 const apiURL = "https://api.hashnode.com";
 const apiKey = process.env.HASHNODE_API_KEY;
 
+/**
+ * Hashnode API's returned errors.
+ */
 export class APIError extends Error {
   readonly errors: any[];
 
@@ -31,7 +34,9 @@ export const query = (gql: string, variables: any) =>
       variables,
     }),
   })
+    // Parse JSON body.
     .then(async (res) => ({ ok: res.ok, json: await res.json() }))
+    // Check for API errors.
     .then((res) => {
       if (!res.ok || res.json.errors) throw new APIError(res.json.errors);
       return res.json;
