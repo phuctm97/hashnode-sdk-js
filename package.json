@@ -1,34 +1,41 @@
 {
-    "name": "hashnode-sdk-js",
-    "version": "0.0.0",
-    "description": "Hashnode SDK for JavaScript/TypeScript (unofficial).",
-    "keywords": [
-    ],
-    "repository": "https://github.com/phuctm97/hashnode-sdk-js",
-    "author": {
-      "name": "Minh-Phuc Tran",
-      "email": "me@phuctm97.com",
-      "url": "https://phuctm97.com"
-    },
-    "license": "MIT",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "files": [
-      "dist/**/*"
-    ],
-    "scripts": {
-      "build": "tsc",
-      "prepublish": "yarn build",
-      "type:check": "tsc --noEmit",
-      "style:check": "prettier --check .",
-      "style:format": "prettier --write ."
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-      "@tsconfig/recommended": "^1.0.1",
-      "prettier": "^2.2.1",
-      "typescript": "^4.1.3"
-    }
+  "name": "hashnode-sdk-js",
+  "version": "0.0.0",
+  "description": "Hashnode SDK for JavaScript/TypeScript (unofficial).",
+  "keywords": [
+    "hashnode",
+    "hashnode-sdk",
+    "hashnode-api",
+    "sdk",
+    "api",
+    "graphql"
+  ],
+  "repository": "https://github.com/phuctm97/hashnode-sdk-js",
+  "author": {
+    "name": "Minh-Phuc Tran",
+    "email": "me@phuctm97.com",
+    "url": "https://phuctm97.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "type:check": "tsc --noEmit",
+    "style:check": "prettier --check .",
+    "style:format": "prettier --write ."
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   }
+}
