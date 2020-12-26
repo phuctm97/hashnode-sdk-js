@@ -1,6 +1,6 @@
 {
   "name": "hashnode-sdk-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hashnode SDK for JavaScript/TypeScript (unofficial).",
   "keywords": [
     "hashnode",
