@@ -1,5 +1,8 @@
 # 📦 hashnode-sdk-js
 
+[![npm version](https://img.shields.io/npm/v/hashnode-sdk-js)](https://www.npmjs.com/package/hashnode-sdk-js)
+[![GitHub license](https://img.shields.io/github/license/phuctm97/hashnode-sdk-js)](/LICENSE)
+
 Hashnode SDK for JavaScript/TypeScript (unofficial).
 
 ## What is this?
